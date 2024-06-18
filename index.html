@@ -1,0 +1,86 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta name="viewport" content="width=device-width , initial-scale=1.0"/>
+        <title>Giriharan R</title>
+        <link rel="stylesheet" href="style.css"/>
+        <link rel="stylesheet" href="mediaqueries.css"/>
+    </head>
+    <body>
+        <nav id="navigation">
+            <div class="name">Giriharan R</div>
+            <div class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </div>
+
+        </nav>
+        <nav id="ham-navigation">
+            <div class="name">Giriharan R</div>
+            <div class="ham-menu">
+                <div class="ham-icon" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="menu-links">
+                    <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                    <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                    <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                    <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+                </div>
+            </div>
+        </nav>
+        <section id="profile">
+            <div class="section__text">
+                <p class="section__text__p1">Hey there, I'm </p>
+                <h1 class="title">Giriharan</h1>
+                <p class="section__text__p2">Computer Science Undergraduate & Developer</p>
+                <div class="btn-container">
+                    <button class="btn btn-color-2" onclick="window.open('./assets/giriharan.pdf')">
+                        Download CV
+                    </button>
+                    <button class="btn btn-color-1" onclick="location.href='./#contact'">
+                        Contact
+                    </button>
+                </div>
+                <div id="socials-container">
+                    <img src="./assets/linkedin.svg" alt="My LinkedIn profile"
+                    class="icon" onclick="location.href='https://www.linkedin.com/in/giriharan-r-645533255/'"/>
+                    <img src="./assets/github.svg" alt="My Github profile"
+                    class="icon" onclick="location.href='https://github.com/giriharan13'"/>
+                </div>
+            </div>
+        </section>
+        <section id="about">
+            <p class="section__text__p1">Get to know more</p>
+            <h1 class="title">About Me</h1>
+            <div class="section-container">
+                <div class="about-details-container">
+                    <div class="text-container">
+                          <p class="about__text__p1">
+                                  Hello👋! I'm Giriharan, an undergraduate Computer Science student👨‍💻 with a passion for software development and machine learning. 
+                             I enjoy creating innovative solutions 💡 and exploring the intersection of technology🤖 and creativity🎨.
+                             In addition to coding, I have a strong interest in video editing🎞️ , blending technical skills with artistic expression. 
+                             My goal🎯 is to continually grow as a developer and make a positive impact in the tech industry.
+                                                        
+                          </p>  
+                    </div>
+                </div>
+            </div>
+            <img src="./assets/arrow.svg"  alt="Arrow" class="icon arrow" onclick="location.href='#experience'"/>
+        </section>
+        <section id="experience">
+            <p class="section__text__p1">Explore my</p>
+            <h1 class="title">Experience</h1>
+            <div class="experience-details-container">
+                
+            </div>
+            </div>
+        </section>
+        <script src="script.js"></script>
+    </body>
+</html>
