@@ -1,0 +1,11 @@
+@media screen and (max-width: 1000px){
+    #navigation{
+        display: none;
+    }
+    #ham-navigation{
+        display: flex;
+    }
+    .arrow{
+        display: none;
+    }
+}
