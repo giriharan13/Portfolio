@@ -1,9 +1,12 @@
+const { addIconSelectors } = require('@iconify/tailwind');
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
     './pages/**/*.{js,ts,jsx,tsx,mdx}',
     './components/**/*.{js,ts,jsx,tsx,mdx}',
     './app/**/*.{js,ts,jsx,tsx,mdx}',
+    './src/*.html'
   ],
   theme: {
     extend: {
@@ -14,5 +17,6 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [ addIconSelectors(['mdi','mdi-light','vscode-icons','skill-icons','logos','devicon']), ],
+  darkMode:"class",
 }
