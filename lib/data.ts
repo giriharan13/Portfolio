@@ -1,10 +1,136 @@
-import React from "react";
+
+const icons = {
+  Java:{
+    name:"Java",
+    icon:"skill-icons:java-dark"
+  },
+  Javascript:{
+    name:"Javascript",
+    icon:"skill-icons:javascript"
+  },
+  Python:{
+    name:"Python",
+    icon:"vscode-icons:file-type-python"
+  },
+  Spring:{
+    name:"Spring",
+    icon:"logos:spring-icon",
+  },
+  Railway:{
+    name:"Railway",
+    icon:"devicon:railway",
+  },
+  Vercel:{
+    name:"Vercel",
+    icon:"logos:vercel",
+  },
+  Bootstrap:{
+    name:"Bootstrap",
+    icon:"logos:bootstrap",
+  },
+  Tailwind:{
+    name:"Tailwind",
+    icon:"vscode-icons:file-type-tailwind",
+  },
+  React:{
+    name:"React",
+    icon:"skill-icons:react-dark",
+  },
+  Angular:{
+    name:"AngularJS",
+    icon:"vscode-icons:file-type-angular",
+  },
+  Flask:{
+    name:"Flask",
+    icon:"skill-icons:flask-light",
+  },
+  Docker:{
+    name:"Docker",
+    icon:"logos:docker-icon",
+  },
+  Cpp:{
+    name:"C++",
+    icon:"skill-icons:cpp",
+  },
+  Typescript:{
+    name:"Typescript",
+    icon:"skill-icons:typescript",
+  },
+  HTML:{
+    name:"HTML",
+    icon:"skill-icons:html",
+  },
+  CSS:{
+    name:"CSS",
+    icon:"skill-icons:css",
+  },
+  MySql:{
+    name:"MySQL",
+    icon:"devicon:mysql-wordmark"
+  },
+  Sql:{
+    name:"SQL",
+    icon:"devicon:azuresqldatabase"
+  },
+  Sqlite:{
+    name:"SQLite",
+    icon:"vscode-icons:file-type-sqlite",
+  },
+  Hibernate:{
+    name:"Hibernate",
+    icon:"devicon:hibernate-wordmark"
+    },
+  JUnit:{
+    name:"Junit",
+    icon:"devicon:junit-wordmark"
+  },
+  Numpy:{
+    name:"Numpy",
+    icon:"vscode-icons:file-type-numpy"
+  },
+  Pandas:{
+    name:"Pandas",
+    icon:"logos:pandas-icon",
+    },
+  Matplotlib:{
+    name:"Matplotlib",
+    icon:"devicon:matplotlib",
+  },
+  Sass:{
+    name:"SASS",
+    icon:"vscode-icons:file-type-sass"
+    },
+  Eclipse:{
+    name:"Eclipse",
+    icon:"devicon:eclipse",
+  },
+  Vscode:{
+    name:"VSCode",
+    icon:"vscode-icons:file-type-vscode",
+  },
+  Sublime:{
+    name:"Sublime Text",
+    icon:"vscode-icons:file-type-sublime"
+  },
+  Git:{
+    name:"Git",
+    icon:"vscode-icons:file-type-git",
+  },
+  Github:{
+      name:"Github",
+      icon:"skill-icons:github-light",
+  },
+  Ubuntu:{
+    name:"Ubuntu",
+    icon:"logos:ubuntu"
+  },
+  Postman:{
+    name:"Postman",
+    icon:"vscode-icons:file-type-postman"
+  },
+}
 
 export const links = [
-  {
-    name: "Home",
-    hash: "#home",
-  },
   {
     name: "About",
     hash: "#about",
@@ -14,12 +140,12 @@ export const links = [
     hash: "#projects",
   },
   {
-    name: "Skills",
-    hash: "#skills",
+    name: "Expertise",
+    hash: "#expertise",
   },
   {
-    name: "Experience",
-    hash: "#experience",
+    name: "Education",
+    hash: "#education",
   },
   {
     name: "Contact",
@@ -27,75 +153,75 @@ export const links = [
   },
 ] as const;
 
-// export const experiencesData = [
-//   {
-//     title: "Graduated bootcamp",
-//     location: "Miami, FL",
-//     description:
-//       "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
-//     icon: React.createElement(LuGraduationCap),
-//     date: "2019",
-//   },
-//   {
-//     title: "Front-End Developer",
-//     location: "Orlando, FL",
-//     description:
-//       "I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.",
-//     icon: React.createElement(CgWorkAlt),
-//     date: "2019 - 2021",
-//   },
-//   {
-//     title: "Full-Stack Developer",
-//     location: "Houston, TX",
-//     description:
-//       "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
-//     icon: React.createElement(FaReact),
-//     date: "2021 - present",
-//   },
-// ] as const;
+export const educationData = [
+  {
+    education:"Bachelor of Engineering",
+    logo:"/Education/college.png",
+    name: "R.M.K. Engineering College",
+    time: "2022-2026",
+    score:{
+      scoreType:"CGPA",
+      score:8.3,
+      totalScore:10,
+    },
+    branches:["Major in Computer Science","Honours in Artificial Intelligence and Machine Learning"]
+    
+  },
+  {
+    education:"12th Grade",
+    logo:"/Education/school.png",
+    name: "Velammal Matriculation Higher Secondary School",
+    time: "2021-2022",
+    score:{
+      scoreType:"Percentage",
+      score:93.33,
+      totalScore:100,
+    },
+    branches:["Computer Science Group"]
+    
+  },
+] as const;
 
-// export const projectsData = [
-//   {
-//     title: "CorpComment",
-//     description:
-//       "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
-//     tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
-//     imageUrl: corpcommentImg,
-//   },
-//   {
-//     title: "rmtDev",
-//     description:
-//       "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-//     tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
-//     imageUrl: rmtdevImg,
-//   },
-//   {
-//     title: "Word Analytics",
-//     description:
-//       "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-//     tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
-//     imageUrl: wordanalyticsImg,
-//   },
-// ] as const;
+export const projectsData = [
+  {
+    title: "Eagle Vision",
+    logo:"/EagleVision/eaglevision.png",
+    description:
+      "EagleVision is a web app that helps users find items available in remote grocery shops. Vendors can manage their inventory and update availability through simple Whatsapp commands.",
+    stack: [icons.Java, icons.Spring, icons.Python, icons.Flask, icons.Javascript,icons.React,icons.Bootstrap,icons.Railway],
+    demoURL:"",
+    githubURL:"",
+    image:"/EagleVision/image.png"
+  },
+  {
+    title: "FocusTube",
+    logo:"/FocusTube/focustube.png",
+    description:
+      "Focus Tube is a web application which fetches the queried videos from youtube with no suggestion.The aim of this app is to reduce distractions",
+    stack: [icons.Python,icons.Flask],
+    demoURL:"",
+    githubURL:"",
+    image:"/FocusTube/image.png"
+  },
+  
+] as const;
 
-export const skillsData = [
-  "HTML",
-  "CSS",
-  "JavaScript",
-  "TypeScript",
-  "React",
-  "Next.js",
-  "Node.js",
-  "Git",
-  "Tailwind",
-  "Prisma",
-  "MongoDB",
-  "Redux",
-  "GraphQL",
-  "Apollo",
-  "Express",
-  "PostgreSQL",
-  "Python",
-  "Django",
-  "Framer Motion",
+export const expertiseData = [
+  {
+    title:"Languages",
+    items:[icons.Java,icons.Python,icons.Javascript,icons.Typescript,icons.HTML,icons.CSS,icons.Sql]
+
+  },
+  {
+    title:"Frameworks",
+    items:[icons.Spring,icons.Hibernate,icons.JUnit,icons.Flask,icons.Numpy,icons.Pandas,icons.Matplotlib,icons.React,icons.Angular,icons.Bootstrap,icons.Tailwind,icons.Sass]
+  },
+  {
+    title:"Database Management Systems",
+    items:[icons.MySql,icons.Sqlite]
+  },
+  {
+    title:"Softwares and Tools that I use",
+    items:[icons.Eclipse,icons.Vscode,icons.Sublime,icons.Postman,icons.Git,icons.Github,icons.Docker,icons.Ubuntu]
+  }
 ] as const;
