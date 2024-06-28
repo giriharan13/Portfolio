@@ -2,3 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+#tsparticles canvas{
+    height: 100% !important;
+    width: 100%;
+    z-index: -1 !important;
+    position:absolute !important;
+    display: flex;
+}
