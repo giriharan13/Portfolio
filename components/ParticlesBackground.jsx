@@ -43,7 +43,7 @@ const ParticlesBackground = (props) => {
       interactivity: {
         events: {
           onClick: {
-            enable: true,
+            enable: false,
             mode: "repulse",
           },
           onHover: {
