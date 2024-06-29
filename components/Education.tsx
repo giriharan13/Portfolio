@@ -19,38 +19,39 @@ function Education() {
         <ul className='flex flex-col'>
         {
           educationData.map((education,index)=>(
-            <motion.li className="flex flex-wrap p-2  dark:text-white dark:text-opacity-90 shadow-sm sm:p-8 last:mb-0 sm:last:mb-0 mb-2 sm:mb-8 mx-4 min-h-[15rem] dark:bg-[#0e2642] bg-[#DBE2EF] rounded-lg hover:shadow-md transition-all" 
-                       key={index}
-                       initial={
-                        {
-                          opacity:0
-                        }
-                       }
-                       whileInView={{
-                          opacity:1
-                       }}
-                       transition={{
-                        duration:1
-                       }}
-                       >
-              <div className='flex items-start max-w-[38rem]'>
-                <Image src={education.logo} alt={education.name} width="192" height="192" quality={95} 
-                className='bg-transparent w-20 sm:w-32 max-w-32 px-1' />
-                <div className='flex flex-col px-2'>
-                  <h2 className='font-semibold text-xl'>{education.education}</h2>
-                  <h3>{education.name}</h3>
-                  <h3>{education.time}</h3>
-                  <h3 className='font-semibold'>{education.score.scoreType} : {education.score.score} / {education.score.totalScore}</h3>
-                  <ul className='list-disc pl-8 mt-1'>
-                    {
-                      education.branches.map((branch,index)=>(
-                        <li key={index}>{branch}</li>
-                      ))
-                    }
-                  </ul>
+            <li className="flex flex-wrap p-2 dark:text-white dark:text-opacity-90 shadow-sm sm:p-8 last:mb-0 sm:last:mb-0 mb-4 sm:mb-8 mx-4 min-h-[15rem] dark:bg-[#0e2642] bg-[#DBE2EF] rounded-lg hover:shadow-md transition-all">
+              <motion.div 
+                          key={index}
+                          initial={
+                           {
+                             opacity:0
+                           }
+                          }
+                          whileInView={{
+                             opacity:1
+                          }}
+                          transition={{
+                           duration:1
+                          }}>
+                <div className='flex items-start max-w-[38rem]'>
+                  <Image src={education.logo} alt={education.name} width="192" height="192" quality={95} 
+                  className='bg-transparent w-20 sm:w-32 max-w-32 px-1' />
+                  <div className='flex flex-col px-2'>
+                    <h2 className='font-semibold text-xl'>{education.education}</h2>
+                    <h3>{education.name}</h3>
+                    <h3>{education.time}</h3>
+                    <h3 className='font-semibold'>{education.score.scoreType} : {education.score.score} / {education.score.totalScore}</h3>
+                    <ul className='list-disc pl-8 mt-1'>
+                      {
+                        education.branches.map((branch,index)=>(
+                          <li key={index}>{branch}</li>
+                        ))
+                      }
+                    </ul>
+                  </div>
                 </div>
-              </div>
-            </motion.li>
+              </motion.div>
+            </li>
           ))
         }
         </ul>
