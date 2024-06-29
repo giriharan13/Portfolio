@@ -29,7 +29,7 @@ function Intro() {
             </motion.div>
           </div>
         </div>
-        <motion.div className='mb-5 mt-4 px-8 text-2xl font-medium !leading-[1.5] sm:text-4xl text-white dark:text-opacity-90'
+        <motion.div className='mb-5 mt-4 px-8 text-2xl font-medium !leading-[1.5] sm:text-4xl text-white text-opacity-100 dark:text-opacity-90'
         initial={{y:100,opacity:0}}
         animate={{y:0,opacity:1}}>
           <span className='font-bold'>Hello </span> <motion.div className="inline-block" initial={{opacity:0,rotate:50}} animate={{opacity:1,rotate:0}}  transition={{delay:0.2}}>👋 </motion.div> <span className='font-bold'>, I'm Giriharan.</span> <br/> I'm a Computer Science Undergraduate with a passion <br/> for <span 
