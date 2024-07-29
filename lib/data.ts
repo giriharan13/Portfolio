@@ -209,7 +209,7 @@ export const projectsData = [
 export const expertiseData = [
   {
     title:"Languages",
-    items:[icons.Java,icons.Python,icons.Javascript,icons.Typescript,icons.HTML,icons.CSS,icons.Sql]
+    items:[icons.Java,icons.Python,icons.Cpp,icons.Javascript,icons.Typescript,icons.HTML,icons.CSS,icons.Sql]
 
   },
   {
