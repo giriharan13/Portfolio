@@ -33,7 +33,7 @@ function Project({title,logo,description,stack,demoURL,githubURL,image}:ProjectP
                     <h3 className='text-2xl font-medium dark:text-white dark:text-opacity-90 text-[#112D4E] '>
                         {title}
                     </h3>
-                    <Image src={logo} width="192" height="192" quality={95} alt={title} className='h-8 w-8'></Image>
+                    <Image src={logo} width="192" height="192" quality={95} alt={title} className='w-12'></Image>
                 </div>
                 <p className='mt-2 leading-relaxed dark:text-white text-gray-700'>{description}</p>
                 <div className='flex flex-col flex-wrap justify-center p-2'>

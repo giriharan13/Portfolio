@@ -187,8 +187,8 @@ export const projectsData = [
     title: "Eagle Vision",
     logo:"/EagleVision/eaglevision.png",
     description:
-      "EagleVision is a web app that helps users find items available in remote grocery shops. Vendors can manage their inventory and update availability through simple Whatsapp commands.",
-    stack: [icons.Java, icons.Spring, icons.Python, icons.Flask, icons.Javascript,icons.React,icons.Bootstrap,icons.Railway],
+      "EagleVision is a web app that helps users find items available in remote grocery shops. Vendors can manage their inventory and update availability.",
+    stack: [icons.Java, icons.Spring, icons.Python, icons.Javascript,icons.React,icons.Bootstrap],
     demoURL:"",
     githubURL:"",
     image:"/EagleVision/image.png"
@@ -214,7 +214,7 @@ export const expertiseData = [
   },
   {
     title:"Frameworks",
-    items:[icons.Spring,icons.Hibernate,icons.JUnit,icons.Flask,icons.Numpy,icons.Pandas,icons.Matplotlib,icons.React,icons.Angular,icons.Bootstrap,icons.Tailwind,icons.Sass]
+    items:[icons.Spring,icons.Hibernate,icons.JUnit,icons.Flask,icons.React,icons.Bootstrap,icons.Tailwind]
   },
   {
     title:"Database Management Systems",
