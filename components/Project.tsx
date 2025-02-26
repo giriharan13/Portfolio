@@ -5,6 +5,7 @@ import { Icon } from "@iconify/react";
 import { useScroll,motion, useTransform } from "framer-motion";
 import Image from "next/image";
 import { useRef } from "react";
+import { BsGithub } from "react-icons/bs";
 
 type ProjectProps = (typeof projectsData)[number]
 
@@ -45,6 +46,11 @@ function Project({title,logo,description,stack,demoURL,githubURL,image}:ProjectP
                             </li>
                         ))}
                     </ul>
+                </div>
+                <div className="flex justify-end">
+                <a href={githubURL} className='bg-black text-white dark:bg-opacity-90 flex flex-wrap gap-2 w-30 p-3 items-center rounded-full hover:scale-110 active:scale-105 transition border border-black/10'>
+                            <BsGithub color="white"/> Github 
+                </a>
                 </div>
             </div>
             <Image src={image} alt={title} quality={90} 

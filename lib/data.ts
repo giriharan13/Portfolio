@@ -190,7 +190,7 @@ export const projectsData = [
       "EagleVision is a web app that helps users find items available in remote grocery shops. Vendors can manage their inventory and update availability.",
     stack: [icons.Java, icons.Spring, icons.Python, icons.Javascript,icons.React,icons.Bootstrap],
     demoURL:"",
-    githubURL:"",
+    githubURL:"https://github.com/giriharan13/EagleVision",
     image:"/EagleVision/image.png"
   },
   {
@@ -200,7 +200,7 @@ export const projectsData = [
       "Focus Tube is a web application which fetches the queried videos from youtube with no suggestion.The aim of this app is to reduce distractions",
     stack: [icons.Python,icons.Flask],
     demoURL:"",
-    githubURL:"",
+    githubURL:"https://github.com/giriharan13/FocusTube",
     image:"/FocusTube/image.png"
   },
   
